@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <database>
+  	<host>5F1Z6KS9jgrFCpHAsszE7kmv7dQ==</host>
+  	<username>R5QL1GLV0ctBXLzU=</username>
+  	<password>ZJ2O5aLV+tPzE6jppk3G7uYPUxg==</password>
+  	<port>NAE8Mj1NsICwL4mk=</port>
+  	<schema>TKNHL1hUmcyWpGT2ZV4yqYVwIIQ==</schema>
+  </database>
+
+  <file_config>
+  	<name>cash</name>
+  	<cash>
+      <schedule>00:09</schedule>
+  		<input_name>0700055599992MT940[yyyyMMdd]</input_name>
+  		<ftp>conn</ftp>
+  		<email>main_mail</email>
+  		<output_name>0700055599992MT940[yyyyMMdd]</output_name>
+  		<format>
+  			<length>37</length>
+  			<identify>:86:UBP</identify>
+  			<format_length>3,4,5,2,6,10</format_length>
+  		</format>
+  		<query>SELECT toko.kode_toko,rekening.company_id FROM toko,rekening WHERE toko.rekening_id = rekening.id AND rekening.company_id ='CID' AND toko.va_number='VAN'</query>
+  	</cash>
+  </file_config>
+
+  <ftp>
+  	<name>conn</name>
+  	<conn>
+  		<host>BFPEO+TyaZNBeboSJWfPWyVTTcw==</host>
+  		<path>cash/</path>
+	  	<username>TAV4TCWZX58jmeHe+FOL/hRY+pw==</username>
+	  	<password>TQYHA9ymby7lJpQhMIHFK2nxb2w==</password>
+	  	<port>5PJXTOGNyeSW2Qbk=</port>
+  	</conn>
+  </ftp>
+
+  <email>
+  	<name>main_mail</name>
+  	<main_mail>
+  		<sender>TCXSUxOitJt3c9v2J6Z3B6GtO6s0rrrpBPxi3</sender>
+	  	<password>5NQJX9d8LR2uciUxsBjAwrjX/jQ==</password>
+	  	<sent_to>ilesmana@mysql.db.dev.buddy-guard.co</sent_to>
+	  	<sent_cc>steven@mysql.db.dev.buddy-guard.co</sent_cc>
+	  	<subject>Mandiri Map</subject>
+  	</main_mail>
+  </email>
+</root>

@@ -1,0 +1,70 @@
+.panel {
+	border-radius: 3px;
+	.panel-heading.mod-1 {
+		.panel-title {
+			padding-top: 3px;
+			&:first-letter {
+				float: left;
+				margin-top: -14px;
+			    margin-right: 12px;
+			    font-size: 43px;
+				color: #00bc99;
+			}
+			span {
+				display: block;
+				font-size: 12px;
+				font-weight: normal;
+				text-transform: capitalize;
+				color: #6f6f6f;
+			}
+		}
+		.btn-edit,
+		.btn-edit:focus {
+			background-color: #d5b56b;
+			border-color: #d5b56b;
+			color: #fff;
+			&:hover {
+				background-color: #e4ce9a;
+				border-color: #e4ce9a;
+			}
+			&:active {
+				background-color: #b99a53;
+				border-color: #b99a53;
+			}
+		}
+	}
+}
+
+.modal-edit-heading {
+	display: inline-block;
+	margin: 0;
+    padding: 0;
+    padding-top: 3px;
+    overflow: hidden;
+	font-family: 'Montserrat';
+	font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    letter-spacing: 0.02em;
+    line-height: normal;
+    -webkit-text-stroke: 0px;
+    &:first-letter {
+		float: left;
+		margin-top: -14px;
+	    margin-right: 12px;
+	    font-size: 43px;
+		color: #00bc99;
+	}
+	span {
+		display: block;
+		font-size: 12px;
+		font-weight: normal;
+		text-transform: capitalize;
+		color: #6f6f6f;
+	}
+}
+
+.summernote-wrapper {
+	margin-bottom: 25px;
+}
